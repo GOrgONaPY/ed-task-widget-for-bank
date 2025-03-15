@@ -3,7 +3,7 @@ from src.masks import get_mask_account, get_mask_card_number
 
 def mask_account_card(name_and_number: str) -> str:
     """Функция возвращает маску номера карты ИЛИ счёта"""
-    split_str = name_and_number.rsplit(" ", 1)  # Разделяем с права, чтобы отделить последний элемент
+    split_str = name_and_number.rsplit(" ", 1)  # Разделяем справа, чтобы отделить последний элемент
     card_type = split_str[0]
     number = int(split_str[1])
 
